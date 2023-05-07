@@ -3,12 +3,9 @@ import dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
 import mongoose, { Types } from "mongoose";
-import ShopItem from "./models/shopItem.js";
 
 import { roomsRouter } from "./controllers/room.js";
 import { shopItemsRouter } from "./controllers/shopItem.js";
-import Food from "./models/food.js";
-import Tour from "./models/tours.js";
 import { foodRouter } from "./controllers/food.js";
 import { tourRouter } from "./controllers/tour.js";
 
@@ -41,8 +38,3 @@ async function main() {
 }
 
 main();
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
