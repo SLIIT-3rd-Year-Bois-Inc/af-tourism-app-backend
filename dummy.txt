@@ -1,0 +1,255 @@
+  /* const rms = [
+    {
+      provider: "Airbnb",
+      address: "Tangalle, Southern Province",
+      country: "Sri Lanka",
+      availableDates: [],
+      price: 999.0,
+      name: "The Box House",
+      images: [
+        "https://a0.muscache.com/im/pictures/c606bdfe-a916-4bae-9fc0-f69391130a92.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/5449a321-13d6-4d29-b791-dc8c65fac853.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/088577c4-c886-407e-b75c-050f391592f1.jpg?im_w=720",
+      ],
+    },
+    {
+      provider: "Airbnb",
+      address: "Varese, Lombardia",
+      country: "Sri Lanka",
+      availableDates: [],
+      price: 1000.0,
+      name: "Corner room with private office in liberty villa",
+      images: [
+        "https://a0.muscache.com/im/pictures/airflow/Hosting-588792902420108198/original/2ad04755-5c82-4a77-bf29-9de0b331fc3e.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/airflow/Hosting-588792902420108198/original/570e024a-4f34-4d5a-b99e-f7de5051631a.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/airflow/Hosting-588792902420108198/original/bc425787-435d-4988-ad04-3a624958e3a0.jpg?im_w=720",
+      ],
+    },
+    {
+      provider: "Airbnb",
+      address: "Surry Hills, New South Wales",
+      country: "Australia",
+      availableDates: [],
+      price: 2000.0,
+      name: "Plan City Adventures from a Surry Hills Balcony",
+      images: [
+        "https://a0.muscache.com/im/pictures/749528e3-d251-4ee7-aa24-4b13604e7501.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-2694793/original/a6d39bc6-9564-4503-8b84-c796ecda03af.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/a0b3e1d3-2e64-421b-b021-98e1973f9cfe.jpg?im_w=720",
+      ],
+    },
+  ];
+
+  // Add dummy elements
+  for (let i = 0; i < 100; i++) {
+    let r = rms[getRandomInt(0, rms.length-1)];
+    // console.log(r, "dafdfadfa");
+    const rm = new Room(r);
+    await rm.save();
+  } */
+
+  /*  const shop = new Shop({
+    name: "Ran Souvenirs",
+    coverImage: "https://ih0.redbubble.net/cover.5532921.2400x600.jpg",
+    desc: `Ran Souvenirs is a charming and inviting Sri Lankan souvenir shop that specializes in unique and locally-made items. As you approach the store, you are greeted by colorful displays of traditional Sri Lankan handicrafts and textiles, which instantly transport you to the vibrant culture of the island.
+
+    The interior of the shop is decorated with wooden carvings and batiks, and the shelves are lined with an array of souvenirs, such as intricately woven baskets, tea sets, and hand-carved masks. Each item is carefully crafted by skilled local artisans, using traditional techniques that have been passed down through generations.
+    
+    The shopkeepers at Ran Souvenirs are friendly and passionate about sharing their knowledge of Sri Lankan culture and history. They are always happy to offer recommendations and advice, whether you are looking for a special gift or simply browsing the collection.
+    
+    Whether you are a visitor to Sri Lanka or a local looking for a unique and meaningful souvenir, Ran Souvenirs is the perfect destination to immerse yourself in the beauty and artistry of Sri Lankan culture.`
+  })
+  await shop.save(); */
+
+  /* let items = [
+    {
+      "name": "Handwoven Basket",
+      "price": 15.99,
+      "desc": "This beautiful handwoven basket is made from natural fibers and features a traditional Sri Lankan design.",
+      "images": [
+        "https://via.placeholder.com/500x500?text=Handwoven+Basket+1",
+        "https://via.placeholder.com/500x500?text=Handwoven+Basket+2",
+        "https://via.placeholder.com/500x500?text=Handwoven+Basket+3",
+        "https://via.placeholder.com/500x500?text=Handwoven+Basket+4"
+      ]
+    },
+    {
+      "name": "Wooden Carving",
+      "price": 29.99,
+      "desc": "This intricate wooden carving depicts a Sri Lankan elephant, a symbol of strength and wisdom.",
+      "images": [
+        "https://via.placeholder.com/500x500?text=Wooden+Carving+1",
+        "https://via.placeholder.com/500x500?text=Wooden+Carving+2",
+        "https://via.placeholder.com/500x500?text=Wooden+Carving+3",
+        "https://via.placeholder.com/500x500?text=Wooden+Carving+4"
+      ]
+    },
+    {
+      "name": "Ceylon Tea Set",
+      "price": 39.99,
+      "desc": "This elegant tea set features fine bone china and is adorned with a beautiful Sri Lankan elephant design.",
+      "images": [
+        "https://via.placeholder.com/500x500?text=Ceylon+Tea+Set+1",
+        "https://via.placeholder.com/500x500?text=Ceylon+Tea+Set+2",
+        "https://via.placeholder.com/500x500?text=Ceylon+Tea+Set+3",
+        "https://via.placeholder.com/500x500?text=Ceylon+Tea+Set+4"
+      ]
+    },
+    {
+      "name": "Gemstone Necklace",
+      "price": 49.99,
+      "desc": "This stunning necklace features a Sri Lankan sapphire, known for its rich blue color and sparkling brilliance.",
+      "images": [
+        "https://via.placeholder.com/500x500?text=Gemstone+Necklace+1",
+        "https://via.placeholder.com/500x500?text=Gemstone+Necklace+2",
+        "https://via.placeholder.com/500x500?text=Gemstone+Necklace+3",
+        "https://via.placeholder.com/500x500?text=Gemstone+Necklace+4"
+      ]
+    },
+    {
+      "name": "Batik Tablecloth",
+      "price": 29.99,
+      "desc": "This vibrant tablecloth is hand-dyed using a traditional batik technique and features a colorful Sri Lankan design.",
+      "images": [
+        "https://via.placeholder.com/500x500?text=Batik+Tablecloth+1",
+        "https://via.placeholder.com/500x500?text=Batik+Tablecloth+2",
+        "https://via.placeholder.com/500x500?text=Batik+Tablecloth+3",
+        "https://via.placeholder.com/500x500?text=Batik+Tablecloth+4"
+      ]
+    },
+    {
+      "name": "Sri Lankan Mask",
+      "price": 24.99,
+      "desc": "This intricately-carved mask is a traditional Sri Lankan artifact, and is believed to bring good luck and fortune to its owner.",
+      "images": [
+        "https://via.placeholder.com/500x500?text=Sri+Lankan+Mask+1",
+        "https://via.placeholder.com/500x500?text=Sri+Lankan+Mask+2",
+        "https://via.placeholder.com/500x500?text=Sri+Lankan+Mask+3",
+        "https://via.placeholder.com/500x500?text=Sri+Lankan+Mask+4"
+      ]
+    },
+    {
+      "name": "Spices Gift Set",
+      "price": 19.99,
+      "desc": "This gift set includes a variety of authentic Sri Lankan spices, including cinnamon, cardamom, and curry powder.",
+      "images": [
+        "https://via.placeholder.com/500x500?text=Spices+Gift+Set+1",
+        "https://via.placeholder.com/500x500?text=Spices+Gift+Set+2",
+        "https://via.placeholder.com/500x500?text=Spices+Gift+Set+3",
+        "https://via.placeholder.com/500x500?text=Spices+Gift+Set+4"
+      ]
+    },] */
+
+  /*    await ShopItem.insertMany(items.map(value => {
+    value.providerId = new mongoose.Types.ObjectId("6456b88b00aa8e21e6ede5d9")
+    return value;
+   })); */
+
+  /* let elem = [
+    {
+        "provider": "Ran souvenirs",
+        "name": "Rice and curry",
+        "desc": "A staple dish made with boiled rice served with a variety of curries, such as chicken, fish, beef, or vegetarian.",
+        "tag": [
+            "traditional"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Kottu roti",
+        "desc": "A famous street food made with chopped roti bread, vegetables, and meat or egg, all stir-fried together.",
+        "tag": [
+            "local"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Kokis",
+        "desc": "A crispy and savory deep-fried snack made with rice flour and coconut milk, often served during festive occasions.",
+        "tag": [
+            "local"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Wambatu moju",
+        "desc": "A sweet and sour pickle made with eggplant and spices, often served as a side dish.",
+        "tag": [
+            "local"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Gotu kola sambol",
+        "desc": "A salad made with gotu kola leaves, onions, tomatoes, and grated coconut, dressed with lime juice.",
+        "tag": [
+            "popular"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Kiribath",
+        "desc": "A special dish of milk rice, often served for breakfast or on special occasions like the Sinhala and Tamil New Year.",
+        "tag": [
+            "popular"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Wambatu moju",
+        "desc": "A sweet and sour pickle made with eggplant and spices, often served as a side dish.",
+        "tag": [
+            "popular"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Konda kavum",
+        "desc": "A sweet Sri Lankan snack made with rice flour, coconut, and treacle, often served during festive occasions.",
+        "tag": [
+            "popular"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Kiribath",
+        "desc": "A special dish of milk rice, often served for breakfast or on special occasions like the Sinhala and Tamil New Year.",
+        "tag": [
+            "traditional"
+        ]
+    },
+    {
+        
+        "provider": "Ran souvenirs",
+        "name": "Pol sambol",
+        "desc": "A spicy condiment made with grated coconut, chili, onion, and lime juice, often served with rice and curry.",
+        "tag": [
+            "popular"
+        ]
+    }
+] */
+  // await Food.insertMany(elem)
+  /* await Tour.insertMany(
+    new Array(5).fill({
+      id: "1",
+      provider: "Ran Tours",
+      category: "Culture Sharper",
+      title: "Explore the Best Places",
+      desc: `Sigiriya is a fascinating historical and cultural site located in central Sri Lanka. This UNESCO World Heritage Site is renowned for its stunning rock fortress, which sits atop a massive rock plateau that rises 200 meters above the surrounding jungle.\nVisitors to Sigiriya can explore the ancient ruins of the fortress, which date back to the 5th century AD. The fortress was built by King Kasyapa as a palace and fortress, and it is adorned with intricate frescoes, elaborate water gardens, and sophisticated engineering marvels.`,
+      features: {
+        duration: "8 hours",
+        meetingPoint: "Meeting point:\nExit B, Outram Park MRT Station",
+        info: "Booking required upon request",
+      },
+      image:
+        "https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__2350bp/public/live_banner/Sigiriya.jpg",
+    })
+  ); */
