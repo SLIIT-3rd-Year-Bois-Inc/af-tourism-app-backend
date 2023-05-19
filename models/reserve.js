@@ -1,6 +1,10 @@
 import mongoose, { Schema, Types } from "mongoose";
 
 const reserveSchema = new Schema({
+  roomId: {
+    type: Types.ObjectId,
+    required: true,
+  },
   address: {
     type: String,
     required: true,
