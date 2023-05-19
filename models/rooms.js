@@ -1,19 +1,11 @@
 import mongoose, { Schema, Types } from "mongoose";
 
 const roomsSchema = new Schema({
-  roomId: {
-    type: Types.ObjectId,
-    required: true,
-  },
   provider: {
     type: String,
     required: true,
   },
   address: {
-    type: String,
-    required: true,
-  },
-  country: {
     type: String,
     required: true,
   },
